@@ -1,0 +1,247 @@
+<div class="team">
+  <div class="team__content" 
+    data-aos="slide-left"
+    data-aos-duration="700"
+    data-aos-offset="400"
+    >
+    <img src="assets/logao.png" alt="">
+    <span>Time mentor</span>
+    <h3>Quem somos</h3>
+    <p>
+      Somos um time com obsessão em transformar a Educação, em capacitar e conectar  pessoas com as suas carreiras.
+    </p>
+    <p>
+      Valorizamos a pluralidade, a igualdade de direitos e  a oportunidade de acesso a todos, com um propósito de reduzir as desigualdades sociais.
+    </p>
+  </div>
+
+  <div class="team__hexa" 
+    data-aos="zoom-in"
+    data-aos-duration="900"
+    data-aos-offset="400"
+  >
+    <div class="hexa" data-aos="zoom-in">
+      <div class="hexan1">
+        <img class="photo" src="assets/carlos.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Carlos Pascoal</span>
+          <span>Advisor MKT</span>
+        </div>
+      </div>
+      <div class="hexan2">
+        <img class="photo" src="assets/tarcisio.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Tarcisio</span>
+          <span>CEO & Founder</span>
+        </div>
+      </div>
+      <div class="hexan3">
+        <img class="photo" src="assets/grazi.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Graziella</span>
+          <span>Esp. Conhec.</span>
+        </div>
+      </div>
+      <div class="hexan4">
+        <img class="photo" src="assets/joao.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>João Freitas</span>
+          <span>CFO</span>
+        </div>
+      </div>
+      <div class="hexan5">
+        <img class="photo" src="assets/vanderlei.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Vanderlei C.</span>
+          <span>Diretor de A.I.</span>
+        </div>
+      </div>
+      <div class="hexan6">
+        <img class="photo" src="assets/julio.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Julio Lucchi</span>
+          <span>Advisor UNIV.</span>
+        </div>
+      </div>
+      <div class="hexan7">
+        <img class="photo" src="assets/pedro.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Pedro Teixeira</span>
+          <span>Jurídico</span>
+        </div>
+      </div>
+      <div class="hexan">
+        <img class="photo" src="assets/bene.png" alt="Photo">
+        <img class="bg" src="assets/hexa.png" alt="Photo">
+        <img class="bgb" src="assets/bgb.png" alt="Photo">
+        <div class="hover">
+          <span>Benedicto F. Jr</span>
+          <span>CTO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style lang="sass">
+  .photo
+    position: absolute
+    top: 0
+    left: 0
+    width: 21.6rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 0
+    margin: 0
+    z-index: 1
+    filter: grayscale(100%)
+
+    &:hover ~ .hover
+      opacity: 1
+
+    &:hover
+      opacity: 0.5
+
+  .hover
+    font-size: 1.6rem
+    position: absolute
+    top: 13rem
+    left: 2.4rem
+    width: 18rem
+    height: 5rem
+    display: flex
+    flex-direction: column
+    text-align: center
+    font-weight: 500
+    color: #fff
+    z-index: 999
+    opacity: 0
+    transition: opacity 0.35s
+
+  .hexan1
+    transform: translate(-30rem, -10rem)
+    z-index: 1
+  .hexan2
+    transform: translate(-12.8rem, -20rem)
+    z-index: 2
+  .hexan3
+    transform: translate(4.9rem, -10rem)
+    z-index: 2
+  .hexan4
+    transform: translate(21.8rem, -20rem)
+    z-index: 2
+  .hexan5
+    transform: translate(21.8rem, -0.6rem)
+    z-index: 1
+  .hexan6
+    transform: translate(-46.8rem, -0.6rem)
+    z-index: 0
+  .hexan7
+    transform: translate(-12.4rem, -0.6rem)
+    z-index: 1
+
+  .team
+    overflow: hidden
+    position: relative
+    
+    width: 100%
+    height: 100rem
+    background: #051115
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media (max-width: 1080px)
+      flex-direction: column
+      height: 120rem
+
+  .team__content
+    position: relative
+    width: 30%
+    height: 44rem
+    display: flex
+    flex-direction: column
+    align-items: start
+    justify-content: center
+
+    @media (max-width: 1080px)
+      width: 80%
+      margin-top: -10rem
+    
+    img
+      position: absolute
+      top: 0
+      right: 0
+      width: 31rem
+
+    span
+      font-size: 2.4rem
+      color: #96B0B0
+      letter-spacing: 0.5rem
+
+    h3
+      font-size: 6rem
+      font-weight: 500
+
+    p
+      font-size: 2.2rem
+      margin-top: 2rem
+
+  .team__hexa
+    position: relative
+    right: -6rem
+
+    width: 94rem
+    height: 40rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 0
+    margin: 0
+
+    @media (max-width: 1080px)
+      margin-top: 4rem
+      right: -1rem
+
+  .hexa
+    position: relative
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 0
+    margin: 0
+
+    .bg
+      position: absolute
+      top: 0.5rem
+      left: 0.8rem
+      width: 22rem
+
+    .bgb
+      position: absolute
+      top: 0
+      left: 0
+      width: 21.5rem
+
+</style>

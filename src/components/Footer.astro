@@ -1,0 +1,108 @@
+<footer class="footer"  data-aos="fade-down" data-aos-duration="600" data-aos-offset="-1" data-aos-delay="50" data-aos-once="false">
+  <div class="links">
+    <a href="/">home</a>
+    <a href="/empresa">a empresa</a>
+  </div>
+
+  <div class="contato">
+    <span>contato</span>
+    <ul>
+      <li>Tarcísio Freitas | <a href="#">+55 11 991363501</a></li>
+      <li>Email | <a href="#">tarcisio.freitas@mentor.space</a></li>
+    </ul>
+  </div>
+
+  <div class="mack">
+    <img src="assets/mack.png" alt="Mackenzie">
+  </div>
+
+  <div class="copy">
+    <a href="#">Todos os direitos reservados. Mentor Space, 2021</a>
+    <a href="#">Política de privacidade</a>
+    <a href="#">Termos de uso</a>
+  </div>
+</footer>
+
+<style lang="sass">
+.footer
+  width: 100%
+  height: 20rem
+  display: flex
+  flex-direction: column
+  align-items: start
+  background: #111
+  position: relative
+  color: #888
+  z-index: 1
+
+  // border: 1px solid red
+  // left: 0
+  // bottom: 100%
+
+.contato
+  font-size: 2rem
+  position: absolute
+  right: 13rem
+  top: 4.65rem
+  transform: translateY(-50%)
+  font-size: 2rem
+  display: flex
+  gap: 3rem
+  z-index: 999
+
+  @media (max-width: 1080px)
+    transform: translate(1.35rem, 3.1rem)
+
+  li
+    transition: 250ms
+
+    &:hover
+      color: #fff
+
+  ul
+    margin-top: 0.2rem
+    font-size: 1.6rem
+
+.mack
+  position: absolute
+  left: 11rem
+  top: 8.4rem
+  transform: translateY(-50%)
+  font-size: 2rem
+  opacity: 0.9
+
+  img
+    width: 38rem
+
+  @media (max-width: 1080px)
+    width: 26rem
+
+.links
+  transform: translate(85rem, 0.1rem)
+  font-size: 2rem
+  padding: 2rem 0
+  display: flex
+  gap: 6rem
+  // flex-direction: column
+
+  @media (max-width: 1080px)
+    transform: translate(56rem, 1.2rem)
+
+  a
+    transition: 250ms
+
+    &:hover
+      color: #fff
+
+.copy
+  width: 100%
+  font-size: 1.2rem
+  background: #000
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 8.8rem
+  padding: 1.4rem 0
+  gap: 2rem
+
+</style>

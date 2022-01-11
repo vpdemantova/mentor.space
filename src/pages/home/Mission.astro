@@ -1,0 +1,103 @@
+<div class="home__mission">
+  <div class="bg-img__wrapper">
+    <img class="bg-img" src="assets/head.png" alt="Mission">
+  </div>
+  <div class="home__mission__content" data-aos="fade-left" data-aos-duration="800">
+    <h3 class="home__mission__title">missão</h3>
+    <p class="home__mission__text">
+      Conectar pessoas para desenvolvimento de suas carreiras, através de uma mentoria inteligente, assertiva e inspiradora
+    </p>
+  </div>
+
+  <div class="home__mission__slogan" data-aos="fade-right" data-aos-duration="800">
+    <div class="home__banner__logo">
+      <span>mentor</span>
+      <span>space®</span>
+    </div>
+    <span class="slogan">
+      conecte, aprenda, cresça.
+    </span>
+  </div>
+</div>
+
+<style lang="sass">
+.home__mission
+  // background: url('assets/head.png') no-repeat center center / cover
+  position: relative
+  width: 100vw
+  height: 90rem
+  color: #2A4359
+
+  @media (max-width: 1080px)
+    height: 70vh
+    color: #DAF7F6
+    margin-bottom: 0
+
+  @media (max-width: 1080px)
+    height: 70vh
+
+  @media (min-width: 440px) and (max-width: 640px)
+    height: calc(90vh + 8rem)
+
+  @media (min-width: 640px) and (max-width: 1080px)
+    height: calc(120vh + 12rem)
+
+  .bg-img
+    @media (max-width: 1080px)
+      object-position: 28%
+      opacity: 0.4
+
+  .home__mission__content
+    font-size: 9.6rem
+    position: absolute
+    top: 12rem
+    right: 18rem
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    @media (max-width: 1080px)
+      top: 31rem
+      right: 50%
+      transform: translateX(50%) scale(1.5)
+
+    @media (min-width: 640px) and (max-width: 1080px)
+      top: 16rem
+
+  .home__mission__title
+    font-size: 10rem
+  
+  .home__mission__text
+    font-size: 3rem
+    text-align: center
+    width: 55rem
+    font-weight: 500
+
+  .home__mission__slogan
+    font-size: 5rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: absolute
+    bottom: 12rem
+    right: 44rem
+  
+    span:nth-of-type(1)
+      font-weight: 600
+
+    span:nth-of-type(2)
+      font-weight: 300
+
+    @media (max-width: 1080px)
+      bottom: 35rem
+      left: 49.6%
+      width: 70rem
+      transform: translateX(-50%) scale(1.4)
+
+    @media (min-width: 640px) and (max-width: 1080px)
+      bottom: 22rem
+    
+  .slogan
+    font-weight: 700 !important
+  
+</style>

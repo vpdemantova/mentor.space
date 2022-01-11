@@ -1,20 +1,46 @@
 ---
-// Component imports and setup JavaScript go here!
+import Layout from '../layouts/layout.astro'
+
+import Mentor from './home/Mentor.astro'
+import Mission from './home/Mission.astro'
+import List from './home/List.astro'
+import Banner from './home/Banner.astro'
+import Seciton from './home/Section.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Welcome to Astro</title>
-		<style>
-			/* scoped CSS styles go here: */
-			/* h1 { ... } */
-		</style>
-	</head>
+<Layout title="Greetings!">
+  <!-- <img class="flor si" src="assets/flor.png" alt="Flor"> -->
+  <img class="flor sa" src="assets/florcortada.png" alt="Flor">
 
-	<body>
-		<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-	</body>
-</html>
+  <div class="home">
+    <Mentor />
+    <Mission />
+    <List />
+    <Banner />
+    <Seciton />
+  </div>
+</Layout>
+
+<style lang="sass" global>
+.header__links li:nth-child(1)
+  color: var(--primary-color)
+
+.home
+  display: flex
+  flex-direction: column
+
+.flor
+  position: absolute
+  width: 70rem
+  z-index: 999
+
+.sa
+  position: absolute
+  top: 246rem
+  right: -3.6rem
+  width: 36rem
+
+  @media (max-width: 1080px)
+    display: none
+
+</style>

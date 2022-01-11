@@ -1,0 +1,104 @@
+<header class="header">
+  <div class="header__logo">
+    <a href="/">
+      <img class="animate__animated animate__fadeInDown" src="assets/logo.png" alt="mentor space">
+    </a>
+  </div>
+  <ul class="header__links animate__animated animate__fadeInDown">
+    <li><a href="/">home</a></li>
+    <li><a href="/empresa">a&nbsp;empresa</a></li>
+  </ul>
+</header>
+
+<script>
+var lastScrolltop = 0
+var navbar = document.querySelector(".header")
+
+window.addEventListener('scroll', function(){
+  var scrolltop = window.pageYOffset || document.documentElement.scrollTop
+  
+  if (scrolltop > lastScrolltop){
+    navbar.style.top = '-25rem'
+    navbar.style.background = '#0C0C0C'
+
+  } else {
+    navbar.style.top = '0'
+    navbar.style.background = '#0C0C0C'
+
+    if (window.pageYOffset < 1){
+      navbar.style.background = '#0C0C0C'
+    }
+  }
+
+  lastScrolltop = scrolltop
+})
+</script>
+
+<style lang="sass">
+.header
+  z-index: 9999
+  padding: 2rem 10rem 2rem 0
+  width: 100vw
+  height: 7.7rem
+  background: #0C0C0C
+
+  position: fixed
+  top: 0
+  left: 0
+
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  transition: 350ms
+
+  @media (max-width: 1080px)
+    padding: 2rem 6rem 2rem 0
+    height: 12rem
+
+.header__logo
+  clip-path: polygon(0 0, 75% 0, 56% 100%, 0% 100%)
+  position: relative
+  top: 3.4rem
+  left: 0
+  width: 46rem
+  height: 14rem
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #0C0C0C
+
+  @media (max-width: 1080px)
+    top: 5rem
+    left: -3rem
+    width: 52rem
+    height: 22rem
+
+
+  img
+    margin-left: -15rem
+    width: 15rem
+    height: 10rem
+
+    @media (max-width: 1080px)
+      margin-left: -13rem
+      transform: scale(1.4)
+
+.header__links
+  font-size: 2.6rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  gap: 0 8rem
+
+  li a
+    transition: 350ms
+  
+    &:hover
+      color: var(--primary-color)
+
+  @media (max-width: 1080px)
+    gap: 0 4rem
+    font-size: 4rem
+
+</style>

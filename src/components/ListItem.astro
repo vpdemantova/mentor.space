@@ -1,0 +1,35 @@
+---
+const {title} = Astro.props
+const {text} = Astro.props
+---
+<!-- opacity delay-1 -->
+<div class="home__list__item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1200">
+  <span>{title}</span>
+  <p>{text}</p>
+</div>
+
+<style lang="sass">
+.home__list__item
+  max-width: 46rem
+  height: auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  gap: 2rem
+
+  @media (max-width: 1080px)
+    transform: scale(1.7) !important
+    gap: 0.6rem
+    margin-bottom: 18rem
+
+span
+  color: #74C9C7
+  font-weight: 600
+
+p
+  color: #A0C5C5
+  font-size: 2rem
+  line-height: 1.25
+  margin-top: 0.5rem
+
+</style>

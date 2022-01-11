@@ -1,0 +1,129 @@
+<div class="valores">
+  <img src="assets/flor.png" alt="" data-aos="zoom-in-up" data-aos-duration="700" data-aos-offset="700"  data-aos-once="true">
+  <img src="assets/flor.png" alt="" data-aos="zoom-in-up" data-aos-duration="700" data-aos-offset="700"  data-aos-once="true">
+  <div class="valores__left">
+    <img src="assets/valores.png" alt="">
+    <ul>
+      <li data-aos="fade-left" data-aos-duration="700">
+        •	Compromisso com o <br> &nbsp;&nbsp;&nbsp;desenvolvimento humano
+      </li>
+      <li data-aos="fade-left" data-aos-duration="700">
+        •	Ética
+      </li>
+      <li data-aos="fade-left" data-aos-duration="700">
+        •	Inovação
+      </li>
+    </ul>
+  </div>
+  <div class="valores__right">
+  <ul>
+    <li data-aos="fade-right" data-aos-duration="700">
+      •	Aprendizado contínuo
+    </li>
+    <li data-aos="fade-right" data-aos-duration="700">
+      •	Qualidade e confiabilidade
+    </li>
+    <li data-aos="fade-right" data-aos-duration="700">
+      •	Equidade, inclusão e diversidade
+    </li>
+    <li data-aos="fade-right" data-aos-duration="700">
+      •	Segurança e privacidade de dados
+    </li>
+  </ul>
+  </div>
+</div>
+
+<style lang="sass">
+  .valores
+    position: relative
+    font-size: 2.8rem
+    width: 100%
+    height: 110rem
+    background: #339597
+    display: flex
+    align-items: end
+    margin-top: -5rem
+
+    @media (max-width: 1080px)
+      background: #053434
+      height: 90rem
+
+    & > img
+      position: absolute
+      top: 4rem
+      left: 36rem
+      width: 70rem
+
+      @media (max-width: 1080px)
+        display: none
+     
+  .valores__left
+    z-index: 1
+    padding: 16rem
+    height: 80rem
+    width: 50%
+    background: #053434
+    display: flex
+    align-items: start
+    justify-content: center
+    flex-direction: column
+    
+    @media (max-width: 1080px)
+      height: 100%
+
+    ul
+      margin-top: -6rem
+      transform: translate(35rem, -4rem) scale(1.1)
+
+      
+      @media (max-width: 1080px)
+        margin-top: -13rem
+        width: 40rem
+        transform: translate(-7rem, 1rem) scale(1.1)
+
+    & > img
+      width: 100rem
+      transform: translate(-20rem, -20.2rem)
+      background: #052C2C
+      padding: 6rem 28rem
+
+      @media (max-width: 1080px)
+        transform: translate(2.8rem, -28rem) scale(1.4)
+        width: 73.9rem
+        padding: 2rem 16rem
+
+
+  .valores__right
+    z-index: 1
+    height: 62rem
+    width: 50%
+    background: #053434
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 2rem 0
+
+    @media (max-width: 1080px)
+      height: 100%
+      background: transparent
+    
+  ul
+    display: flex
+    flex-direction: column
+    gap: 3rem 0
+    transform: translate(-12rem, -1rem) scale(1.1)
+
+    @media (max-width: 1080px)
+      margin-top: -13rem
+      width: 40rem
+      transform: translate(2rem, 15.9rem) scale(1.1)
+
+    li
+      transition: 250ms
+
+      &:hover
+        color: #56D8D4
+
+
+</style>

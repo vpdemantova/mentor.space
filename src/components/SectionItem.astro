@@ -1,0 +1,157 @@
+---
+const {title} = Astro.props
+const {desc} = Astro.props
+const {image} = Astro.props
+const {icon} = Astro.props
+
+const {itemOne} = Astro.props
+const {itemTwo} = Astro.props
+const {itemThree} = Astro.props
+const {itemFour} = Astro.props
+const {itemFive} = Astro.props
+
+const {iconFive} = Astro.props
+
+const {left} = Astro.props
+const {right} = Astro.props
+const {rightIcon} = Astro.props
+const {theme} = Astro.props
+const {last} = Astro.props
+---
+<div class="home__section__content">
+  <div class="home__section__first" style={theme} data-aos="fade-in">
+    <img src={icon} alt="Icon" style={rightIcon}>
+    <span style={right}>{title}</span>
+    <p style={right}>{desc}</p>
+    <img src={image} alt="Image" style={left}>
+  </div>
+  
+  <div class="home__section__second">
+    <ul style={last}>
+      <li data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/list-icon.png" alt="ListIcon">
+        <span>{itemOne}</span>
+      </li>
+      <li data-aos="fade-right" data-aos-duration="1000">
+        <img src="assets/list-icon.png" alt="ListIcon">
+        <span>{itemTwo}</span>
+      </li>
+      <li data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-200">
+        <img src="assets/list-icon.png" alt="ListIcon">
+        <span>{itemThree}</span>
+      </li>
+      <li data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-300">
+        <img src="assets/list-icon.png" alt="ListIcon">
+        <span>{itemFour}</span>
+      </li>
+      <li data-aos="fade-right" data-aos-duration="1000" data-aos-offset="-200">
+        <img src={iconFive} alt="">
+        <span>{itemFive}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<style lang="sass">
+.home__section__content
+  position: relative
+  width: 100%
+  height: 100%
+
+.home__section__first
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 45rem
+  color: #1D5A59
+  background: #65E5DA
+
+  img:first-child
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 20rem
+    width: 12%
+
+    @media (max-width: 1080px)
+      left: 64rem !important
+      width: 22%
+
+  span
+    font-size: 5rem
+    font-weight: 600
+    position: absolute
+    top: 26%
+    transform: translateY(-50%)
+    left: 50rem
+
+    @media (max-width: 1080px)
+      left: 6rem !important
+
+  p
+    font-size: 2.14rem
+    position: absolute
+    top: 60%
+    transform: translateY(-50%)
+    left: 50rem
+    width: 50rem
+    line-height: 1.3
+
+    @media (max-width: 1080px)
+      font-size: 2.3rem
+      font-weight: 600
+      left: 6rem !important
+
+  img:last-child
+    position: absolute
+    top: 0
+    right: 0
+    width: 34.2%
+
+    @media (max-width: 1080px)
+      display: none
+
+.home__section__second
+  position: absolute
+  bottom: 0
+  width: 100%
+  height: 45rem
+  background: #000000
+
+  ul
+    position: absolute
+    top: 10rem
+    left: 26rem
+    display: flex
+    align-items: center
+    flex-direction: column
+    width: 80%
+    flex-wrap: wrap
+    width: 150rem
+    gap: 3rem 0
+    height: 28rem
+
+    @media (max-width: 1080px)
+      left: 8rem
+      gap: 3rem 0
+      width: 90rem
+
+  li
+    font-size: 2.4rem
+    width: 60rem
+    min-height: auto
+    display: flex
+    align-items: start
+    justify-content: start
+    gap: 2rem
+
+    @media (max-width: 1080px)
+      font-size: 2rem
+      width: 46rem
+
+      img 
+        width: 5rem
+        margin-right: 2rem             
+
+</style>

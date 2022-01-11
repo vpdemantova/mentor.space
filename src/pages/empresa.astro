@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/layout.astro'
+import Footer from '../components/Footer.astro'
+
+import App from './empresa/App.astro'
+import BannerDois from './empresa/BannerDois.astro'
+import Team from './empresa/Team.astro'
+import Valores from './empresa/Valores.astro'
+---
+
+<Layout title="Mentor Space">
+  <div class="about">
+    <App />
+    <BannerDois />
+    <Team />
+    <Valores />
+    <Footer />
+  </div>
+</Layout>
+
+<style lang="sass" global>
+.header__links li:nth-child(2)
+  color: var(--primary-color)
+  
+</style>

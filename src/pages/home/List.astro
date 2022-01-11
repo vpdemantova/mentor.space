@@ -1,0 +1,133 @@
+---
+import ListItem from '../../components/ListItem.astro'
+---
+
+<div class="home__list">
+  <img class="flor" src="assets/flor.png" alt="Flor">
+  <!-- <img class="flor" src="assets/flor.png" alt="Flor"> -->
+
+  <h3 class="home__list__title">
+    Potencialidades
+  </h3>
+
+  <div class="home__list__list">
+    <div class="home__list__line"></div>
+
+    <ListItem 
+      title="Guia de Carreira" 
+      text="Independente do momento de vida, guiamos o indivíduo para fazer escolhas relativas as suas carreiras de forma consciente e segura, promovendo o crescimento sustentável e autorrealização." />
+    <ListItem 
+      title="Impulsionador" 
+      text="Acreditamos que o autoconhecimento e o crescimento pessoal são os principais meios para assumir o protagonismo de uma trajetória de sucesso, alcançando suas metas e realizando sonhos." />
+    <ListItem 
+      title="Posicionamento" 
+      text="Dúvidas fazem parte desse processo, mas ter opções de caminhos a serem trilhados te ajudam a escolher como seguir. " />
+    <ListItem 
+      title="Tecnologia" 
+      text="Nossa tecnologia, aliada à inteligência artificial e análise das suas experiências, proporciona mentorias inspiradoras que o ajudam a fazer boas escolhas." />
+    <ListItem 
+      title="Uxer" 
+      text="Somos uma plataforma fácil, prática e intuitiva de gestão de carreira para todos, seja para a pessoa, escola ou empresa." />
+    <ListItem 
+      title="Confiável e Segura" 
+      text="Auxiliamos o indivíduo a gerenciar os seus dados, sempre de forma segura e atualizada, para que ele tenha total controle. " />
+  </div>
+</div>
+
+<style lang="sass">
+.flor
+  width: 70rem
+  z-index: 999
+
+.home__list
+  height: 90rem
+  color: #56D8D4
+  position: relative
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  z-index: 999
+
+  @media (max-width: 440px)
+    height: 130vh
+    justify-content: start
+
+  @media (min-width: 440px) and (max-width: 500px)
+    height: 150vh
+    justify-content: start
+
+  @media (min-width: 500px) and (max-width: 580px)
+    height: 170vh
+    justify-content: start
+
+  @media (min-width: 580px) and (max-width: 730px)
+    height: 210vh
+    justify-content: start
+
+  @media (min-width: 730px) and (max-width: 880px)
+    height: 250vh
+    justify-content: start
+
+  @media (min-width: 880px) and (max-width: 950px)
+    height: 280vh
+    justify-content: start
+
+  @media (min-width: 950px) and (max-width: 1080px)
+    height: 310vh
+    justify-content: start
+  
+  img:nth-child(1)
+    transform: translate(-30rem, -10rem)
+    position: absolute
+    top: 0
+    left: 0
+
+  // img:nth-child(2)
+  //   transform: translate(25rem, 25rem)
+  //   position: absolute
+  //   bottom: 0
+  //   right: 0
+
+.home__list__title
+  text-align: center
+  font-size: 7.4rem
+  margin-bottom: 3rem
+
+  @media (max-width: 1080px)
+    margin-top: 10rem
+    font-size: 10rem
+    margin-bottom: 18rem
+
+
+.home__list__list
+  // border: 1px solid red
+  display: flex
+  height: 60rem
+  flex-wrap: wrap
+  max-width: 100rem
+  gap: 1rem 2rem
+  justify-content: space-between
+  position: relative
+
+  @media (max-width: 1080px)
+    flex-wrap: nowrap
+    flex-direction: column
+
+.home__list__line
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  height: 90%
+  width: 3px
+  background: var(--white)
+  // margin: 2rem 0
+
+  @media (max-width: 1080px)
+    display: none
+
+
+</style>

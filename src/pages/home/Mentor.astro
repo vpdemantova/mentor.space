@@ -1,0 +1,65 @@
+<div class="home__mentor">
+  <div class="bg-img__wrapper">
+    <img class="bg-img" src="assets/hand.png" alt="Mission">
+  </div>
+  <h3 class="home__mentor__title animate__animated animate__fadeInDown">
+    Conecte-se <br> ao <span class="primary">futuro</span>
+  </h3>
+  <p class="home__mentor__text animate__animated animate__fadeIn">
+    Mentorias inspiradoras, <br>
+    protagonismo na gestão de trilhas <br>
+    de aprendizagem e carreria, expansão do <br>
+    conhecimento e conexão com o mercado <br>
+    de trabalho.
+  </p>
+</div>
+
+<style lang="sass">
+.home__mentor
+  position: relative
+  width: 100vw
+  height: calc(90rem + 7.7rem)
+
+  .bg-img
+    @media (max-width: 1080px)
+      object-position: 20%
+      opacity: 0.9
+
+  @media (max-width: 1080px)
+    height: 70vh
+
+  @media (min-width: 440px) and (max-width: 640px)
+    height: calc(90vh + 8rem)
+
+  @media (min-width: 640px) and (max-width: 1080px)
+    height: calc(120vh + 12rem)
+
+.home__mentor__title
+  position: absolute
+  top: 28rem
+  left: 20rem
+  font-size: 9.6rem
+  font-weight: 500
+  line-height: 1
+
+  @media (max-width: 1080px)
+    top: 48rem
+    left: 7rem
+    font-size: 14rem
+
+.home__mentor__text
+  position: absolute
+  top: 46rem
+  left: 20rem
+  margin-top: 3rem
+  font-size: 2.6rem
+  line-height: 1.2
+
+  @media (max-width: 1080px)
+    top: 78rem
+    left: 8rem
+    font-size: 3rem
+    margin-top: 5rem
+    transform: scale(1.4) translateX(8.6rem)
+
+</style>

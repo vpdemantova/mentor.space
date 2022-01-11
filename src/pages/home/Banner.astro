@@ -1,0 +1,63 @@
+<div class="home__banner">
+  <div class="home__banner__logo">
+    <span>mentor</span>
+    <span>space®</span>
+  </div>
+  <span>o seu ecossistema virtual inteligente e personalizado!</span>
+</div>
+
+<style lang="sass">
+  .home__banner
+    // border: 1px solid red
+    height: 53rem
+    width: 100%
+    position: relative
+    background: #0C0C0C
+    z-index: -999
+
+    & > span
+      // border: 1px solid red
+
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      font-size: 6rem
+      font-weight: 600
+      line-height: 1.2
+      text-align: justify
+      letter-spacing: 0.44rem
+      word-spacing: 1.2rem
+      width: 100rem
+      color: #37B6B2
+      transition: 350ms
+
+      &:hover
+        color: #ADE2E2
+
+      @media (max-width: 1080px)
+        transform: scale(0.97)
+        top: 50%
+        left: 4%
+        text-align: start
+        letter-spacing: 0.2rem
+
+  .home__banner__logo
+    position: absolute
+    top: 5.6rem
+    left: 18rem
+    color: #A0C5C5
+
+    @media (max-width: 1080px)
+      transform: scale(2)
+      top: 14rem
+      left: 21rem
+      opacity: 0.9
+  
+    span:nth-of-type(1)
+      font-weight: 500
+
+    span:nth-of-type(2)
+      font-weight: 200
+
+</style>

@@ -1,0 +1,75 @@
+---
+import SectionItem from '../../components/SectionItem.astro'
+
+import Footer from '../../components/Footer.astro'
+---
+
+<div class="home__section">
+  <SectionItem client:load
+    title="para você" 
+    desc="Ser o principal mentor para o crescimento profissional de cada indivíduo, com mentoria inteligente e focada na autorrealização."
+    image="assets/voce.png"
+    icon="assets/i-voce.png"
+    itemOne="Conexão com: Mentores especializados Rede de contatos Escolas e curso"
+    itemTwo="Trilha de Aprendizagem personalizada"
+    itemThree="Visão das competências requeridas pelo mercado"
+    itemFour="Autoavaliação de Competências (mentor skills)"
+    itemFive="Perfil Vivo (live profile®)"
+    iconFive="assets/list-icon.png"
+  />
+  <SectionItem client:load
+    theme="color: #195654; background: #8ED6D6;"
+    left="left: 0; height: 45rem;"
+    right="left: 90rem;"
+    rightIcon="left: 142rem;"
+    title="para mentores" 
+    desc="Ser um espaço de divulgação dos seus conhecimentos, inspirando e ampliando conexões com profissionais, escolas e empresas. "
+    image="assets/mentores.png"
+    icon="assets/i-mentores.png"
+    itemOne="Ferramenta de mentoria de amplo alcance, com aplicação de inteligência artificial, através do Portal de Publicações, Indicação de Cursos, Eventos, Livros (Feed Mentor)"
+    itemTwo="Canal para divulgação do seu Portfolio profissional"
+    itemThree="Conexão com escolas, empresas e profissionais"
+    itemFour="Oportunidade de monetização"
+  />
+  <SectionItem client:load
+    theme="color: #8ED6D2; background: #272F2F;"
+    title="para empresas" 
+    desc="Ser uma plataforma segura, parceira e que utiliza inteligência artificial para encontrar, inspirar e formar profissionais qualificados."
+    image="assets/empresas.png"
+    icon="assets/i-empresas.png"
+    itemOne="Canal de conexão com colaboradores, mentores, escolas e cursos para formação continuada"
+    itemTwo="Alinhamento com os objetivos de aprendizagem dos seus colaboradores"
+    itemThree="Visão das competências requeridas para cada área de atuação"
+    itemFour="Ampliação de planos de incentivo educacional"
+  />
+  <SectionItem client:load
+    theme="color: #C2F1F0; background: #171717;"
+    left="left: 0; height: 45rem;"
+    right="left: 90rem;"
+    rightIcon="left: 142rem;"
+    title="para escolas" 
+    desc="Ser uma plataforma parceira, que conecta a escola, os alunos e os profissionais, de forma efetiva, criando valor e possibilitando com que elas acompanhem, não somente a evolução dos seus alunos, mas também as tendencias do mercado de trabalho, acelerando todo o processo educacional"
+    image="assets/escolas.png"
+    icon="assets/i-escolas.png"
+    itemOne="Portal de divulgação de cursos, Palestras e cursos, com leads qualificados"
+    itemTwo="Entendimento das competências requeridas pelo mercado, em tempo real"
+    itemThree="Cursos focados no interesse de formação do mercado"
+    itemFour="Visão das competências requeridas pelo mercado e dos interesses de formação profissional, possibilitando adequação dos seus cursos"
+    itemFive="Melhor assertividade de matriculas, minimizando desistências"
+    iconFive="assets/list-icon.png"
+    last="height: 34rem;"
+  />
+
+  <Footer />
+</div>
+
+<style lang="sass">
+.home__section
+  position: relative
+  width: 100%
+  height: 90rem
+
+  @media (max-width: 1080px)
+    // display: none
+
+</style>
